@@ -1,4 +1,4 @@
 # beer
 Simple beer calculator for BDO
 
-[LINK](phuoc.github.io/beer/)
+[LINK](www.phuoc.github.io/beer/)
