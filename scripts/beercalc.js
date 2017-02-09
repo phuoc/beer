@@ -11,7 +11,6 @@ function calc(grains) {
 
     var gGrade = 5;
 
-
     if(a.checked) {
         gGrade = 5;
     } else if(b.checked) {
