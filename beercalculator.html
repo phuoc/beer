@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>plvl.me: Beer Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Beer Calculator</legend>
+
+
+                <!-- Quality of Grains buttons -->
+                <div class="row">
+                    <div class="panel panel-default modal-dialog">
+                        <div class="panel-body">
+                            <div class="btn-group" data-toggle="buttons">
+
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </label>
+
+                                <label class="btn btn-success">
+                                    <input type="radio" name="options" id="option2" autocomplete="off">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </label>
+
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="options" id="option3" autocomplete="off">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </label>
+
+                            </div>
+                            <hr/>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="textinput">Grains*</label>
+                                <div class="col-md-4">
+                                    <input id="textinput" name="textinput" type="number" placeholder="Amount" class="form-control input-md" onkeyup="calc(this.value)">
+                                    <span class="help-block">* potato, wheat, corn or barley</span>
+                                </div>
+                            </div>
+
+                            <div>
+                            <!--next module-->
+                            </div>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Ingredient</th>
+                                        <th class="text-center">Single</th>
+                                        <th class="text-center">Required</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sugar</td>
+                                        <td class="text-center" id="sugar">1</td>
+                                        <td class="text-center bold " id="totalSugar">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leavening</td>
+                                        <td class="text-center" id="leavening">2</td>
+                                        <td class="text-center bold" id="totalLeavening">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mineral Water</td>
+                                        <td class="text-center" id="mineralwater">6</td>
+                                        <td class="text-center bold" id="totalWater">0</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Total crafts</th>
+                                        <th></th>
+                                        <th class="text-center" id="totalBeer">0</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+
+    <script src="scripts/beercalc.js"></script>
+</body>
+</html>
