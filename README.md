@@ -1,0 +1,2 @@
+# beer
+Simple beer calculator
