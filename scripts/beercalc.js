@@ -4,6 +4,7 @@
 
 
 
+
 function calc(grains) {
     var a = document.getElementById("option1");
     var b = document.getElementById("option2");
@@ -27,4 +28,9 @@ function calc(grains) {
     document.getElementById("grains").innerHTML = Math.floor(reqGrains);
     document.getElementById("totalGrains").innerHTML = Math.floor(grains*reqGrains);
 
+}
+
+function changeRecipe(i) {
+    console.log("heiheihallo");
+    document.getElementById("grains").value = i;
 }
