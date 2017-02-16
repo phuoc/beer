@@ -62,17 +62,17 @@
                             <div class="btn-group" data-toggle="buttons">
 
                                 <label class="btn btn-default active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" onClick="changeRecipe(5)">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" onclick="changeRecipe(5)">
                                     <span class="glyphicon glyphicon-ok"></span>
                                 </label>
 
                                 <label class="btn btn-success">
-                                    <input type="radio" name="options" id="option2" autocomplete="off" onClick="changeRecipe(2)">
+                                    <input type="radio" name="options" id="option2" autocomplete="off" onclick="changeRecipe(2)">
                                     <span class="glyphicon glyphicon-ok"></span>
                                 </label>
 
                                 <label class="btn btn-primary">
-                                    <input type="radio" name="options" id="option3" autocomplete="off" onClick="changeRecipe(1)">
+                                    <input type="radio" name="options" id="option3" autocomplete="off" onclick="changeRecipe(1)">
                                     <span class="glyphicon glyphicon-ok"></span>
                                 </label>
 
@@ -82,7 +82,7 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="textinput">Grains*</label>
                                 <div class="col-md-4">
-                                    <input id="textinput" name="textinput" type="text" placeholder="Amount" class="form-control input-md" onkeypress="calc(this.value)">
+                                    <input id="textinput" name="textinput" type="number" placeholder="Amount" class="form-control input-md" onkeyup="calc()">
                                     <span class="help-block">* potato, wheat, corn or barley</span>
                                 </div>
                             </div>

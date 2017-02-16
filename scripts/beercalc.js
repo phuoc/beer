@@ -5,11 +5,11 @@
 
 
 
-function calc(grains) {
+function calc() {
     var a = document.getElementById("option1");
     var b = document.getElementById("option2");
     var c = document.getElementById("option3");
-
+    var grains = document.getElementById("textinput").value;
     var reqGrains = 5;
 
     if(a.checked) {
@@ -21,16 +21,24 @@ function calc(grains) {
     }
 
     var antBeer = grains/reqGrains;
-    document.getElementById("totalSugar").innerHTML = Math.floor(antBeer);
-    document.getElementById("totalLeavening").innerHTML = Math.floor(antBeer*2);
-    document.getElementById("totalWater").innerHTML = Math.floor(antBeer*6);
-    document.getElementById("totalBeer").innerHTML = Math.floor(antBeer);
+    var tSugar = Math.floor(antBeer);
+    var tLeavening = Math.floor(antBeer*2);
+    var tWater = Math.floor(antBeer*6);
+    var tGrains = Math.floor(grains);
+    var tBeer = Math.floor(antBeer);
+
+
+    console.log("antBeer: " + grains);
+    document.getElementById("totalSugar").innerHTML = tSugar;
+    document.getElementById("totalLeavening").innerHTML = tLeavening;
+    document.getElementById("totalWater").innerHTML = tWater;
     document.getElementById("grains").innerHTML = Math.floor(reqGrains);
-    document.getElementById("totalGrains").innerHTML = Math.floor(grains*reqGrains);
+    document.getElementById("totalGrains").innerHTML = tGrains;
+    document.getElementById("totalBeer").innerHTML = tBeer;
 
 }
 
 function changeRecipe(i) {
     console.log("heiheihallo");
-    document.getElementById("grains").value = i;
+    document.getElementById("grains").innerHTML = i;
 }
