@@ -17,15 +17,15 @@ function calc() {
 
     if(a.checked) {
         reqGrains = 5;
-        updateTable(reqGrains);
+        updateTable(reqGrains, tSugar, tLeavening, tWater, tGrains, tBeer);
         console.log("a");
     } else if(b.checked) {
         reqGrains = 2;
-        updateTable(reqGrains);
+        updateTable(reqGrains, tSugar, tLeavening, tWater, tGrains, tBeer);
         console.log("b");
     } else if(c.checked){
         reqGrains = 1;
-        updateTable(reqGrains);
+        updateTable(reqGrains, tSugar, tLeavening, tWater, tGrains, tBeer);
         console.log("c");
     }
 
@@ -36,12 +36,12 @@ function changeRecipe(i) {
     document.getElementById("grains").innerHTML = i;
 }
 
-function updateTable(r) {
+function updateTable(r, s, l, w, g, b) {
     console.log("antBeer: " + grains)
-    document.getElementById("totalSugar").innerHTML = tSugar;
-    document.getElementById("totalLeavening").innerHTML = tLeavening;
-    document.getElementById("totalWater").innerHTML = tWater;
+    document.getElementById("totalSugar").innerHTML = s;
+    document.getElementById("totalLeavening").innerHTML = l;
+    document.getElementById("totalWater").innerHTML = w;
     document.getElementById("grains").innerHTML = Math.floor(r);
-    document.getElementById("totalGrains").innerHTML = tGrains;
-    document.getElementById("totalBeer").innerHTML = tBeer;
+    document.getElementById("totalGrains").innerHTML = g;
+    document.getElementById("totalBeer").innerHTML = b;
 }
