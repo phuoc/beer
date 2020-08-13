@@ -18,12 +18,15 @@ function calc() {
     if(a.checked) {
         reqGrains = 5;
         updateTable(reqGrains);
+        console.log("a");
     } else if(b.checked) {
         reqGrains = 2;
         updateTable(reqGrains);
+        console.log("b");
     } else if(c.checked){
         reqGrains = 1;
         updateTable(reqGrains);
+        console.log("c");
     }
 
 }
